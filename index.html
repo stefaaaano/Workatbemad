@@ -1,0 +1,356 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Work at BeMAd</title>
+
+<link rel="icon" href="favicon.png" sizes="any">
+<link rel="icon" type="image/png" href="favicon.png" sizes="32x32">
+<link rel="apple-touch-icon" href="icon.png">
+
+
+  <!-- Social thumbnail / link preview -->
+<meta property="og:title" content="BE MAD — Bureaux à louer" />
+<meta property="og:description" content="Un espace de coworking inspirant et confortable" />
+<meta property="og:type" content="website" />
+
+  <!-- Google Font: Raleway (300/400/600/700) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+<!-- index.html (sostituisci SOLO la sezione <header class="hero"> con questa versione) -->
+<header class="hero" id="top">
+  <nav class="nav">
+    <div class="nav__inner">
+      <a class="brand" href="#top">Work at BeMad</a>
+
+      <div class="nav__links" aria-label="Navigazione principale">
+        <a href="#concept">Concept</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contacts">Contacts</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CAROUSEL BACKGROUND -->
+  <div class="hero__carousel" aria-hidden="true">
+        <div class="hero__slide is-active" style="background-image:url('img-hero-0.jpg')"></div>
+    <div class="hero__slide" style="background-image:url('img-hero-1.jpg')"></div>
+    <div class="hero__slide" style="background-image:url('img-hero-2.jpg')"></div>
+    <div class="hero__slide" style="background-image:url('img-hero-3.jpg')"></div>
+  </div>
+
+  <div class="hero__overlay" aria-hidden="true"></div>
+
+  <div class="hero__content">
+    <div class="wrap">
+      <div class="hero__copy">
+        <p class="hero__lead">
+La convivialité d’un coworking. L’efficacité d’un bureau privatif. Un espace professionnel inspirant et confortable.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__title">
+    <div class="wrap">
+      <h1>Bureaux à louer <br> Papeteries de Genval</h1>
+
+      <!-- CONTROLLI (minimal) -->
+      <div class="hero__controls" aria-label="Controlli carosello">
+        <button class="hero__btn" type="button" data-dir="-1" aria-label="Immagine precedente">Prev</button>
+        <button class="hero__btn" type="button" data-dir="1" aria-label="Immagine successiva">Next</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+  <div class="divider"></div>
+
+  <main>
+    <!-- SEZIONE EDITORIALE -->
+    <section class="section section--manifesto" id="concept">
+      <div class="wrap">
+        <p class="manifesto">
+Nous cherchions un lieu entre le coworking moderne, à taille humaine, et des bureaux privatifs, avec les avantages des deux modèles, sans les inconvénients. Un environnement urbain avec des restaurants, des boutiques, des salles de sport mais aussi, proche de la nature. 
+Nous voulions un espace où on pourrait travailler au calme et échanger des idées avec d’autres entrepreneurs/freelances. 
+Et puis, une grande table où Manuella pourrait vous proposer un curry ou une bonne pâte parce que la cuisine est son « autre » bureau. 
+</br>Alors, on l’a créé : on a totalement rénové ce bâtiment, on y a installé sept bureaux privatifs, une salle de réunion, deux cuisines et une terrasse parce que travailler dehors, c'est bien aussi. 
+</br>Et maintenant… on vous attend !
+        </p>
+      </div>
+    </section>
+
+    <!-- SEZIONE “testi alternati + grande immagine” (icone/immagini come placeholder) -->
+<!-- HTML corretto: 3 colonne (2 colonne icone + 1 colonna immagine), niente rientri -->
+<section class="section section--features" id="features">
+  <div class="wrap">
+    <div class="features3">
+      <!-- COL 1 -->
+      <div class="features3__col">
+        <div class="feature">
+          <div class="feature__media">
+            <img src="img-icon-1.png" alt="Segnaposto immagine 1">
+          </div>
+          <p class="feature__text">
+            <strong>7 bureaux privatifs</strong> (1 à 3 pers./bureau)
+            <br>Soignés et personnalisables
+          </p>
+        </div>
+
+        <div class="feature">
+          <div class="feature__media">
+            <img src="img-icon-2.png" alt="Segnaposto icona 2">
+          </div>
+          <p class="feature__text">
+            <strong>Accessibilité + + +</strong>
+            <br>Gare de Genval 3’ à pied,
+            <br>Accès rapide N4/E411
+          </p>
+        </div>
+
+        <div class="feature">
+          <div class="feature__media">
+            <img src="img-icon-3.png" alt="Segnaposto icona 3">
+          </div>
+          <p class="feature__text">
+            <strong>Contrat annuel</strong>
+            <br>12 mois minimum
+          </p>
+        </div>
+      </div>
+
+      <!-- COL 2 -->
+      <div class="features3__col">
+        <div class="feature">
+          <div class="feature__media">
+            <img src="img-icon-4.png" alt="Segnaposto icona 4">
+          </div>
+          <p class="feature__text">
+            <strong>Charges et services inclus</strong>
+            <br>internet haut débit, wifi, café, thé, nettoyage hebdomadaire...
+          </p>
+        </div>
+
+        <div class="feature">
+          <div class="feature__media">
+            <img src="img-icon-5.png" alt="Segnaposto icona 5">
+          </div>
+          <p class="feature__text">
+            <strong>Salle de réunion</strong> <br> Accès illimité
+          </p>
+        </div>
+      </div>
+
+      <!-- COL 3 (immagine) -->
+      <figure class="features3__media">
+        <img src="img-feature.jpg" alt="Segnaposto immagine grande">
+      </figure>
+    </div>
+  </div>
+</section>
+
+
+        <!-- GALLERY -->
+<section class="section section--gallery" id="gallery">
+  <div class="wrap">
+    <div class="strip">
+      <div class="strip__head">
+        <p class="strip__kicker"> <strong>Pro mais pas corporate</strong> <br>
+          Un lieu pour travailler, mais aussi cuisiner et partager. <br> Un espace de bureaux pensé comme un lieu de vie.
+        </p>
+      </div>
+
+      <div class="strip__frame">
+        <button class="strip__arrow strip__arrow--left" type="button" aria-label="Slide precedente" data-strip-prev>
+          ←
+        </button>
+
+        <div class="strip__track" data-strip-track>
+          <figure class="strip__item">
+            <img src="img-1.jpg" alt="Segnaposto immagine 1">
+          </figure>
+          <figure class="strip__item">
+            <img src="img-2.jpg" alt="Segnaposto immagine 2">
+          </figure>
+          <figure class="strip__item">
+            <img src="img-3.jpg" alt="Segnaposto immagine 3">
+          </figure>
+          <figure class="strip__item">
+            <img src="img-4.jpg" alt="Segnaposto immagine 4">
+          </figure>
+                    <figure class="strip__item">
+            <img src="img-5.jpg" alt="Segnaposto immagine 1">
+          </figure>
+          <figure class="strip__item">
+            <img src="img-6.jpg" alt="Segnaposto immagine 2">
+          </figure>
+          <figure class="strip__item">
+            <img src="img-7.jpg" alt="Segnaposto immagine 3">
+          </figure>
+          <figure class="strip__item">
+            <img src="img-8.jpg" alt="Segnaposto immagine 4">
+          </figure>
+                    <figure class="strip__item">
+            <img src="img-9.jpg" alt="Segnaposto immagine 4">
+          </figure>
+        </div>
+
+        <button class="strip__arrow strip__arrow--right" type="button" aria-label="Slide successiva" data-strip-next>
+          →
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- FAQ -->
+    <section class="section section--dark" id="faq">
+      <div class="wrap">
+        <div class="faq">
+          <div class="faq__left">
+            <h2 class="section-title">FAQ</h2>
+          </div>
+
+          <div class="faq__right" aria-label="Domande frequenti">
+            <details class="qa" open>
+    <summary class="qa__q">Les bureaux sont-ils accessibles 24/7 ?</summary>
+    <div class="qa__body">
+      <p class="qa__a">
+        Oui. Les bureaux et les espaces communs de l’étage sont accessibles 24h/24, 7j/7, pour un usage professionnel.
+        Les espaces communs du rez-de-chaussée, eux, prennent une autre vie : ils sont réservés aux workshops et événements,
+        en semaine à partir de 18h et le week-end.
+      </p>
+    </div>
+  </details>
+
+  <details class="qa">
+    <summary class="qa__q">À qui s’adresse BE MAD ?</summary>
+    <div class="qa__body">
+      <p class="qa__a">
+        À celles et ceux qui travaillent souvent seuls — freelances, consultants, entrepreneurs, homeworkers — et cherchent
+        un cadre professionnel, humain et inspirant, sans l’agitation des grands coworkings. BE MAD s’adresse aussi aux TPE
+        et PME à la recherche d’une solution plug &amp; work, simple et flexible pour exercer leurs activités.
+      </p>
+    </div>
+  </details>
+
+  <details class="qa">
+    <summary class="qa__q">Quel est le “truc en plus” de BE MAD ?</summary>
+    <div class="qa__body">
+      <p class="qa__a">
+        On a imaginé BE MAD comme un bureau aussi confortable qu’à la maison : le calme, une connexion haut débit, une bonne
+        machine à espresso, des espaces soignés et personnalisables. Le tout dans une atmosphère vivante, portée par le collectif.
+        Et puis il y a la grande table autour de laquelle on échange, on partage. Quand elle ne dirige pas son agence, Manuella
+        passe en cuisine et imagine mille façons de faire vivre le lieu.
+      </p>
+    </div>
+  </details>
+
+  <details class="qa">
+    <summary class="qa__q">Y a-t-il des espaces communs ?</summary>
+    <div class="qa__body">
+      <p class="qa__a">
+        Oui. Une cuisine équipée à chaque étage, des espaces de pause où l’on peut travailler seul, sans se sentir isolé — c’est l’ADN de BE MAD.
+        <br><br>
+        <strong>Puis-je recevoir des clients ou des collaborateurs ?</strong><br>
+        Oui. BE MAD offre un cadre professionnel, accueillant et soigné, idéal pour recevoir ponctuellement et renvoyer une image qualitative de votre activité.
+      </p>
+    </div>
+  </details>
+
+  <details class="qa">
+    <summary class="qa__q">Où se situe BE MAD ?</summary>
+    <div class="qa__body">
+      <p class="qa__a">
+        BE MAD est installé sur le site des Anciennes Papeteries de Genval, à deux pas de la gare, des commerces et des grands axes.
+        Un lieu facile d’accès, dans un environnement agréable et inspirant.
+      </p>
+    </div>
+  </details>
+    <details class="qa">
+    <summary class="qa__q">Qui sommes-nous ?</summary>
+    <div class="qa__body">
+      <p class="qa__a">
+Be Mad est le projet de MAtthieu et MAnuella Damiens, deux entrepreneurs, frère et sœur. Matthieu a une entreprise de rénovation, Nordika. 
+Il occupe un bureau avec son associé. Et Manuella dirige une agence de communication. 
+Elle occupe un espace avec Stefano, graphiste et des freelances créatifs. 
+Un diplôme de chef en poche, quand elle n’écrit pas, elle cuisine… Bientôt pour vous!
+      </p>
+    </div>
+  </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATTI -->
+    <section class="section section--contact" id="contact">
+      <div class="wrap">
+        <h2 class="section-title">Une visite ?<br>Plus d'infos ?</h2>
+
+        <div class="contact-grid">
+          <div class="contact-left">
+
+
+<div class="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3065.207530549092!2d4.511544077083209!3d50.72297567164547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3d718a6c8010b%3A0xbf91a53887f9d6!2sRue%20de%20Rixensart%2014%2C%201332%20Rixensart!5e1!3m2!1sit!2sbe!4v1770727272457!5m2!1sit!2sbe" 
+width="450" 
+height="600" 
+style="border:0;" 
+allowfullscreen="" 
+loading="lazy" 
+referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+</div>
+          </div>
+
+          <div class="contact-right">
+<div class="qa">
+  <h3 class="qa__q">Email</h3>
+  <p class="qa__a">work@be-mad.be</p>
+</div>
+<div class="qa">
+  <h3 class="qa__q">Matthieu Damiens</h3>
+  <p class="qa__a">0475 442 849</p>
+</div>
+<div class="qa">
+  <h3 class="qa__q">Manuella Damiens</h3>
+  <p class="qa__a">0473 740 573</p>
+</div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+            <figure class="logo-footer">
+        <img src="img-logo.png" alt="Segnaposto immagine grande">
+      </figure>
+      <p>Copyright BeMad<br>
+
+      </p>
+      <a href="#top">Retour sur</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
