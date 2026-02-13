@@ -68,7 +68,8 @@ b,strong{ font-weight: 700; } /* NON usare <bold> */
   position: absolute;
   top: 0; left: 0; right: 0;
   z-index: 3;
-  padding: 20px 0;
+  padding: 0 0;
+  margin-top: 20px;
 }
 
 .nav__inner{
@@ -81,6 +82,17 @@ b,strong{ font-weight: 700; } /* NON usare <bold> */
   gap: 18px;
 
   color: var(--panna);
+}
+
+.logo {
+  width: 250px;
+  text-align: left;
+}
+
+.logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .brand{
@@ -145,7 +157,7 @@ b,strong{ font-weight: 700; } /* NON usare <bold> */
 .hero__copy{ max-width: 520px; }
 
 .hero__lead{
-  margin: 0;
+  margin-top: 10px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.6;
@@ -493,7 +505,7 @@ b,strong{ font-weight: 700; } /* NON usare <bold> */
 /* 3 colonne: 2 per feature, 1 per immagine */
 .features3{
   display: grid;
-  grid-template-columns: 1fr 1fr 1.5fr;
+  grid-template-columns: 1.5fr 1fr 1fr;
   gap: 44px;
   align-items: stretch;  /* <— deve essere stretch */
 }
