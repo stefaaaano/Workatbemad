@@ -615,7 +615,8 @@ b,strong{ font-weight: 700; } /* NON usare <bold> */
 .footer{
   border-top: 1px solid var(--line);
   padding: 0px 0;
-  background: var(--panna);
+  background: var(--ossidiana);
+  color: var(--panna);
 }
 
 .footer__inner{
