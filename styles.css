@@ -571,7 +571,7 @@ b,strong{ font-weight: 700; } /* NON usare <bold> */
 /* responsive FEATURES: 2 colonne icone + immagine sotto, centrato */
 @media (max-width: 980px){
   .features3{
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 26px;
     justify-content: center;   /* centra la griglia */
   }
@@ -594,7 +594,7 @@ b,strong{ font-weight: 700; } /* NON usare <bold> */
 
 @media (max-width: 640px){
   .features3{
-    grid-template-columns: 1fr 1fr; /* resta a 2 colonne anche in mobile */
+    grid-template-columns: 1fr; /* resta a 2 colonne anche in mobile */
     gap: 18px;
   }
 
@@ -694,7 +694,7 @@ b,strong{ font-weight: 700; } /* NON usare <bold> */
 
   .logo{ max-width: 70vw; text-align: left; }
 
-  .features__left{ grid-template-columns: 1fr; }
+  .features__left{ grid-template-columns: 2fr; }
   .feature--indent{ margin-left: 0; } /* consigliato: niente rientri su mobile */
   .features__right img{ aspect-ratio: 3 / 4; }
 
