@@ -663,6 +663,8 @@ b,strong{ font-weight: 700; } /* NON usare <bold> */
 
 @media (max-width: 640px){
   :root{ --pad-x: 18px; --pad-y: 60px;--nav-h: 96px; }
+
+  .nav{ height: auto; }
   .nav__inner{
     flex-direction: column;
     align-items: flex-start;
@@ -681,6 +683,12 @@ b,strong{ font-weight: 700; } /* NON usare <bold> */
     width: 48px;
     height: 48px;
   }
+
+  .logo {
+  margin-top: 100px;
+  max-width: 70vw;
+  text-align: left;
+}
 
   .features__left{ grid-template-columns: 1fr; }
   .feature--indent{ margin-left: 40px; }
