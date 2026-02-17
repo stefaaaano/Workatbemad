@@ -667,8 +667,9 @@ b,strong{ font-weight: 700; } /* NON usare <bold> */
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
+    margin-top: 20px;
   }
-  .nav__links{ margin-top: 10px; gap: 18px; flex-wrap: wrap; }
+  .nav__links{ gap: 18px; flex-wrap: wrap; }
 
   .hero__content{ padding-top: calc(var(--nav-h) + 6vh); }
   .hero__lead{ font-size: 16px; }
