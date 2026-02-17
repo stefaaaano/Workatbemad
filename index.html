@@ -20,8 +20,21 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+<script>
+  const canonical = "the-post-office.be";
+  const targetBase = "https://the-post-office.be";
+  const host = window.location.host;
 
-  <link rel="stylesheet" href="styles.css" />
+  if (host !== canonical && host !== "www." + canonical) {
+    window.location.replace(
+      targetBase +
+      window.location.pathname +
+      window.location.search +
+      window.location.hash
+    );
+  }
+</script>
+<link rel="canonical" href="https://the-post-office.be/">
 </head>
 
 <body>
@@ -126,8 +139,6 @@ On l’a trouvé, juste en face de la Poste… Alors, on l’a appelé le Post O
             <br>Accès rapide N4/E411
           </p>
         </div>
-
-      </div>
 
       <!-- COL 2 -->
       <div class="features3__col">
