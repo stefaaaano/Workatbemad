@@ -65,7 +65,7 @@ b,strong{ font-weight: 700; } /* NON usare <bold> */
    NAV
    ========================= */
 .nav{
-  position: sticky;
+  position: absolute;
   top: 0; left: 0; right: 0;
   z-index: 3;
   padding: 0 0;
