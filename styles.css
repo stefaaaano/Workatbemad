@@ -685,7 +685,6 @@ b,strong{ font-weight: 700; } /* NON usare <bold> */
   }
 
   .logo {
-  margin-top: 100px;
   max-width: 70vw;
   text-align: left;
 }
