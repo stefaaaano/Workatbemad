@@ -69,7 +69,6 @@ b,strong{ font-weight: 700; } /* NON usare <bold> */
    ========================= */
 .nav{
   position: sticky;
-  top: 0;
   z-index: 10;
   height: var(--nav-h);
   display: flex;
@@ -79,8 +78,6 @@ b,strong{ font-weight: 700; } /* NON usare <bold> */
 
 .nav__inner{
   width: min(var(--maxw), calc(100% - (var(--pad-x) * 2)));
-  margin: 0 auto;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -90,6 +87,7 @@ b,strong{ font-weight: 700; } /* NON usare <bold> */
 
   width: min(var(--maxw), calc(100% - (var(--pad-x) * 2)));
   margin: 0 auto;
+  padding-top: 30px;
 }
 
 .logo {
