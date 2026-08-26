@@ -1,341 +1,237 @@
-<!-- index.html -->
 <!doctype html>
-<html lang="it">
+<html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Work at The Post Office</title>
+<meta charset="utf-8">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Post Office Workspace — Bureaux privatifs aux Papeteries de Genval</title>
+<meta name="description" content="Bureaux privatifs meublés, tout compris, à trois minutes de la gare de Genval. Formules Full Time et Flexi Time.">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="icon-192.png" type="image/png" sizes="192x192">
+<link rel="icon" href="icon-512.png" type="image/png" sizes="512x512">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="canonical" href="https://www.the-post-office.be/">
+<meta name="theme-color" content="#AB3722" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#17110F" media="(prefers-color-scheme: dark)">
 
-<link rel="icon" href="favicon.png" sizes="any">
-<link rel="icon" type="image/png" href="favicon.png" sizes="32x32">
-<link rel="apple-touch-icon" href="favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Post Office">
+<meta property="og:locale" content="fr_BE">
+<meta property="og:url" content="https://www.the-post-office.be/">
+<meta property="og:title" content="The Post Office Workspace — Bureaux privatifs aux Papeteries de Genval">
+<meta property="og:description" content="Bureaux privatifs meublés, tout compris, à trois minutes de la gare de Genval. Formules Full Time et Flexi Time.">
+<meta property="og:image" content="https://www.the-post-office.be/images/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="La façade éclairée de The Post Office, aux Papeteries de Genval, à la tombée du jour">
 
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Post Office Workspace — Bureaux privatifs aux Papeteries de Genval">
+<meta name="twitter:description" content="Bureaux privatifs meublés, tout compris, à trois minutes de la gare de Genval. Formules Full Time et Flexi Time.">
+<meta name="twitter:image" content="https://www.the-post-office.be/images/og.jpg">
 
-  <!-- Social thumbnail / link preview -->
-<meta property="og:title" content="The Post Office — Bureaux à louer" />
-<meta property="og:description" content="Un espace de coworking inspirant et confortable" />
-<meta property="og:type" content="website" />
-
-  <!-- Google Font: Raleway (300/400/600/700) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
-<script>
-  const canonical = "the-post-office.be";
-  const targetBase = "https://the-post-office.be";
-  const host = window.location.host;
-
-  if (host !== canonical && host !== "www." + canonical) {
-    window.location.replace(
-      targetBase +
-      window.location.pathname +
-      window.location.search +
-      window.location.hash
-    );
-  }
-</script>
-<link rel="canonical" href="https://the-post-office.be/">
-  <link rel="stylesheet" href="styles.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
 </head>
-
 <body>
-<!-- index.html (sostituisci SOLO la sezione <header class="hero"> con questa versione) -->
-<header class="hero" id="top">
-  <nav class="nav">
-    <div class="nav__inner">
-      <a class="logo" href="#top"> 
-          <div class="logo">
-            <img src="img-logo2.png" alt="Segnaposto immagine 1">
-          </div>
-      </a>
 
-      <div class="nav__links" aria-label="Navigazione principale">
-        <a href="#concept">Concept</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact">Contacts</a>
+<div class="sheet">
+<main>
+
+  <h1 class="sr-only">The Post Office Workspace — bureaux privatifs à Genval</h1>
+
+  <!-- ============ ACCUEIL — COUVERTURE ============ -->
+  <section id="accueil">
+    <div class="mosaic">
+      <figure class="t-logo"><img fetchpriority="high" width="940" height="1220" src="images/logo.webp" alt="The Post Office Workspace"></figure>
+      <figure class="t-facade"><img fetchpriority="high" width="900" height="675" src="images/facade.webp" alt="La façade des bureaux, rue de Rixensart"></figure>
+      <div class="t-text">
+        <p class="tt">Papeteries de Genval</p>
+        <p class="td">Bureaux privatifs meublés, tout compris, à trois minutes de la gare de Genval. Formules flexibles.</p>
       </div>
+      <figure class="t-table"><img width="900" height="1200" loading="lazy" decoding="async" src="images/grande-table.webp" alt="La grande table de réunion et son mur de vanneries"></figure>
+      <figure class="t-1"><img width="640" height="480" loading="lazy" decoding="async" src="images/salle-reunion.webp" alt="La salle de réunion et sa table ronde"></figure>
+      <figure class="t-2"><img width="640" height="853" loading="lazy" decoding="async" src="images/couloir-entree.webp" alt="Le couloir vers l'entrée"></figure>
+      <figure class="t-3"><img width="640" height="853" loading="lazy" decoding="async" src="images/cactus.webp" alt="Cactus en pots de terre cuite"></figure>
+      <figure class="t-4"><img width="640" height="853" loading="lazy" decoding="async" src="images/cuisine.webp" alt="La cuisine et son îlot"></figure>
+      <figure class="t-5"><img width="640" height="853" loading="lazy" decoding="async" src="images/couloir-bureaux.webp" alt="Le couloir des bureaux"></figure>
+      <figure class="t-6"><img width="640" height="853" loading="lazy" decoding="async" src="images/postes-de-travail.webp" alt="Deux postes de travail"></figure>
     </div>
-  </nav>
 
-  <!-- CAROUSEL BACKGROUND -->
-  <div class="hero__carousel" aria-hidden="true">
-        <div class="hero__slide is-active" style="background-image:url('img-hero-0.jpg')"></div>
-    <div class="hero__slide" style="background-image:url('img-hero-1.jpg')"></div>
-    <div class="hero__slide" style="background-image:url('img-hero-2.jpg')"></div>
-    <div class="hero__slide" style="background-image:url('img-hero-3.jpg')"></div>
-  </div>
+    <p class="web-cover">www.the-post-office.be</p>
+  </section>
 
-  <div class="hero__overlay" aria-hidden="true"></div>
-
-  <div class="hero__content">
-    <div class="wrap">
-      <div class="hero__copy">
-        <p class="hero__lead">
-La convivialité d’un coworking. Le confort d’un bureau privatif. Un espace professionnel pensé comme un lieu de vie.
-        </p>
+  <!-- ============ TARIFS — LES DEUX FORMULES ============ -->
+  <section id="tarifs" class="reveal">
+    <section>
+      <h2 class="label">Bureaux privatifs Full Time</h2>
+      <div class="tablewrap">
+        <table>
+          <caption class="sr-only">Tarifs mensuels des bureaux Full Time, hors TVA</caption>
+          <thead>
+            <tr>
+              <th class="l" scope="col">Bureau</th>
+              <th class="l" scope="col">Surface</th>
+              <th scope="col">1 personne</th>
+              <th scope="col">2 personnes</th>
+              <th scope="col">3 personnes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="l bureau">Bureau 1</td><td class="l surface" data-label="Surface">7,5 m²</td>
+              <td data-label="1 personne"><span class="price">500<span class="cur">&nbsp;€</span></span></td>
+              <td data-label="2 personnes"><span class="price">600<span class="cur">&nbsp;€</span></span></td>
+              <td class="none" data-label="3 personnes">—</td>
+            </tr>
+            <tr>
+              <td class="l bureau">Bureau 2</td><td class="l surface" data-label="Surface">10 m²</td>
+              <td data-label="1 personne"><span class="price">625<span class="cur">&nbsp;€</span></span></td>
+              <td data-label="2 personnes"><span class="price">725<span class="cur">&nbsp;€</span></span></td>
+              <td class="none" data-label="3 personnes">—</td>
+            </tr>
+            <tr>
+              <td class="l bureau">Bureau 3</td><td class="l surface" data-label="Surface">11 m²</td>
+              <td data-label="1 personne"><span class="price">700<span class="cur">&nbsp;€</span></span></td>
+              <td data-label="2 personnes"><span class="price">800<span class="cur">&nbsp;€</span></span></td>
+              <td data-label="3 personnes"><span class="price">850<span class="cur">&nbsp;€</span></span></td>
+            </tr>
+            <tr>
+              <td class="l bureau">Bureau 4</td><td class="l surface" data-label="Surface">11,5 m²</td>
+              <td data-label="1 personne"><span class="price">750<span class="cur">&nbsp;€</span></span></td>
+              <td data-label="2 personnes"><span class="price">850<span class="cur">&nbsp;€</span></span></td>
+              <td data-label="3 personnes"><span class="price">900<span class="cur">&nbsp;€</span></span></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-    </div>
-  </div>
-
-  <div class="hero__title">
-    <div class="wrap">
-      <h1>Bureaux à louer <br> Papeteries de Genval</h1>
-
-      <!-- CONTROLLI (minimal) -->
-      <div class="hero__controls" aria-label="Controlli carosello">
-        <button class="hero__btn" type="button" data-dir="-1" aria-label="Immagine precedente">Prev</button>
-        <button class="hero__btn" type="button" data-dir="1" aria-label="Immagine successiva">Next</button>
-      </div>
-    </div>
-  </div>
-</header>
-
-
-  <div class="divider"></div>
-
-  <main>
-    <!-- SEZIONE EDITORIALE -->
-    <section class="section section--manifesto" id="concept">
-      <div class="wrap">
-        <p class="manifesto">
-Situé face à la Poste, The Post Office est un lieu professionnel entre le coworking à taille humaine et des bureaux privatifs. 
-Il offre les avantages des deux modèles : on y travaille au calme sans être seul(e), 
-dans un environnement urbain, à deux pas des commerces, des salles de sport et de la gare, mais aussi proche de la nature.
-        </p>
-      </div>
+      <p class="foot-note">Montants mensuels, hors TVA. Charges et services compris.</p>
     </section>
 
-    <!-- SEZIONE features: immagine a sx + griglia 2x2 a dx -->
-<section class="section section--features" id="features">
-  <div class="wrap">
-    <div class="features3">
-
-      <!-- COLONNA IMMAGINE -->
-      <figure class="features3__media">
-        <img src="img-feature.jpg" alt="Segnaposto immagine grande">
-      </figure>
-
-      <!-- GRIGLIA 2x2 DELLE VOCI -->
-      <div class="features3__items">
-        <div class="feature">
-          <div class="feature__media">
-            <img src="img-icon-1.png" alt="Segnaposto immagine 1">
-          </div>
-          <p class="feature__text">
-            <strong>Bureaux privatifs à partir de 450€/mois</strong>
-            <br>Equipés et personnalisables
-          </p>
-        </div>
-
-        <div class="feature">
-          <div class="feature__media">
-            <img src="img-icon-4.png" alt="Segnaposto icona 4">
-          </div>
-          <p class="feature__text">
-            <strong>Charges et services inclus</strong>
-            <br>internet haut débit, wifi, café, thé, nettoyage hebdomadaire...
-          </p>
-        </div>
-
-        <div class="feature">
-          <div class="feature__media">
-            <img src="img-icon-2.png" alt="Segnaposto icona 2">
-          </div>
-          <p class="feature__text">
-            <strong>Accessibilité + + +</strong>
-            <br>Gare de Genval 3’ à pied,
-            <br>Accès rapide N4/E411
-          </p>
-        </div>
-
-        <div class="feature">
-          <div class="feature__media">
-            <img src="img-icon-5.png" alt="Segnaposto icona 5">
-          </div>
-          <p class="feature__text">
-            <strong>Salle de réunion</strong> <br> Accès illimité
-          </p>
-        </div>
+    <section>
+      <h2 class="label">Bureaux privatifs Flexi Time</h2>
+      <p class="intro">Vous recherchez un bureau pour quelques jours par semaine uniquement&nbsp;? Louez-le pour 2 ou 3 jours, du lundi au vendredi, et profitez d'un espace fixe et d'une armoire fermée à clé.</p>
+      <div class="tablewrap">
+        <table>
+          <caption class="sr-only">Tarifs mensuels des bureaux Flexi Time, hors TVA</caption>
+          <thead>
+            <tr>
+              <th class="l" scope="col">Bureau</th>
+              <th class="l" scope="col">Surface</th>
+              <th scope="col"><span class="sup">Montant mensuel</span>2 jours par semaine</th>
+              <th scope="col"><span class="sup">Montant mensuel</span>3 jours par semaine</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="l bureau">Bureau 1</td><td class="l surface" data-label="Surface">7,5 m²</td>
+              <td class="hi" data-label="2 jours / semaine"><span class="price">240<span class="cur">&nbsp;€</span></span></td>
+              <td class="hi" data-label="3 jours / semaine"><span class="price">360<span class="cur">&nbsp;€</span></span></td>
+            </tr>
+            <tr>
+              <td class="l bureau">Bureau 2</td><td class="l surface" data-label="Surface">10 m²</td>
+              <td class="hi" data-label="2 jours / semaine"><span class="price">290<span class="cur">&nbsp;€</span></span></td>
+              <td class="hi" data-label="3 jours / semaine"><span class="price">435<span class="cur">&nbsp;€</span></span></td>
+            </tr>
+            <tr>
+              <td class="l bureau">Bureau 3</td><td class="l surface" data-label="Surface">11 m²</td>
+              <td class="hi" data-label="2 jours / semaine"><span class="price">320<span class="cur">&nbsp;€</span></span></td>
+              <td class="hi" data-label="3 jours / semaine"><span class="price">480<span class="cur">&nbsp;€</span></span></td>
+            </tr>
+            <tr>
+              <td class="l bureau">Bureau 4</td><td class="l surface" data-label="Surface">11,5 m²</td>
+              <td class="hi" data-label="2 jours / semaine"><span class="price">340<span class="cur">&nbsp;€</span></span></td>
+              <td class="hi" data-label="3 jours / semaine"><span class="price">510<span class="cur">&nbsp;€</span></span></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-
-    </div>
-  </div>
-</section>
-
-
-        <!-- GALLERY -->
-<section class="section section--gallery" id="gallery">
-  <div class="wrap">
-    <div class="strip">
-
-      <div class="strip__frame">
-        <button class="strip__arrow strip__arrow--left" type="button" aria-label="Slide precedente" data-strip-prev>
-          ←
-        </button>
-
-        <div class="strip__track" data-strip-track>
-          <figure class="strip__item">
-            <img src="img-2.jpg" alt="Segnaposto immagine 2">
-          </figure>
-          <figure class="strip__item">
-            <img src="img-3.jpg" alt="Segnaposto immagine 3">
-          </figure>
-          <figure class="strip__item">
-            <img src="img-4.jpg" alt="Segnaposto immagine 4">
-          </figure>
-                    <figure class="strip__item">
-            <img src="img-5.jpg" alt="Segnaposto immagine 1">
-          </figure>
-          <figure class="strip__item">
-            <img src="img-6.jpg" alt="Segnaposto immagine 2">
-          </figure>
-          <figure class="strip__item">
-            <img src="img-9.jpg" alt="Segnaposto immagine 4">
-          </figure>
-        </div>
-
-        <button class="strip__arrow strip__arrow--right" type="button" aria-label="Slide successiva" data-strip-next>
-          →
-        </button>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-    <!-- FAQ -->
-    <section class="section section--dark" id="faq">
-      <div class="wrap">
-        <div class="faq">
-          <div class="faq__left">
-            <h2 class="section-title">FAQ</h2>
-          </div>
-
-          <div class="faq__right" aria-label="Domande frequenti">
-            <details class="qa" open>
-    <summary class="qa__q">Les bureaux sont-ils accessibles 24/7 ?</summary>
-    <div class="qa__body">
-      <p class="qa__a">
-        Oui. Les bureaux et les espaces communs de l’étage sont accessibles 24h/24, 7j/7, pour un usage professionnel.
-      </p>
-    </div>
-  </details>
-
-  <details class="qa">
-    <summary class="qa__q">À qui s’adresse The Post Office ?</summary>
-    <div class="qa__body">
-      <p class="qa__a">
-        À celles et ceux qui travaillent souvent seuls — freelances, consultants, entrepreneurs, homeworkers — et cherchent
-        un cadre professionnel, humain et inspirant, sans l’agitation des grands coworkings. The Post Office s’adresse aussi aux TPE
-        et PME à la recherche d’une solution plug &amp; work.
-      </p>
-    </div>
-  </details>
-
-  <details class="qa">
-    <summary class="qa__q">Quels sont les avantages du Post Office ?</summary>
-    <div class="qa__body">
-      <p class="qa__a">
-Un parking à proximité, une bonne machine à expresso et des espaces vraiment accueillants pour travailler 
-et recevoir ses clients/visiteurs avec un accès illimité à la salle de réunion. 
-Nos voisins : Färm, Execo (Hyrox, Crossfit, Pilates Reformer), Farina (food&coffee)… et la Poste ! 
-      </p>
-    </div>
-  </details>
-
-  <details class="qa">
-    <summary class="qa__q">Y a-t-il des espaces communs ?</summary>
-    <div class="qa__body">
-      <p class="qa__a">
-        Oui. Une cuisine équipée à chaque étage, des espaces de pause où l’on peut travailler seul, sans se sentir isolé.
-          </p>
-    </div>
-  </details>
-
-  <details class="qa">
-    <summary class="qa__q">Où se situe The Post Office ?</summary>
-    <div class="qa__body">
-      <p class="qa__a">
-        The Post Office est installé sur le site des Anciennes Papeteries de Genval, à deux pas de la gare, des commerces et des grands axes.
-        Un lieu facile d’accès, dans un environnement vivant et inspirant.
-      </p>
-    </div>
-  </details>
-  
-      <!-- eliminabile 
-    <details class="qa">
-    <summary class="qa__q">Qui sommes-nous ?</summary>
-    <div class="qa__body">
-      <p class="qa__a">
-The Post Office est le projet de MAtthieu et MAnuella Damiens, deux entrepreneurs, frère et sœur. Matthieu a une entreprise de rénovation, Nordika. 
-Il occupe un bureau avec son associé. Et Manuella dirige une agence de communication. 
-Elle occupe un espace avec Stefano, graphiste et des freelances créatifs. 
-Un diplôme de chef en poche, quand elle n’écrit pas, elle cuisine… Bientôt pour vous!
-      </p>
-    </div>
-  </details>
-  -->
-          </div>
-        </div>
-      </div>
+      <p class="foot-note">Montants mensuels, hors TVA. Charges et services compris.</p>
     </section>
+  </section>
 
-    <!-- CONTATTI -->
-    <section class="section section--contact" id="contact">
-      <div class="wrap">
-        <h2 class="section-title">Une visite ?<br>Plus d'infos ?</h2>
+  <!-- ============ SERVICES ============ -->
+  <section id="services" class="reveal">
+    <h2 class="label">Tout est compris</h2>
+    <ul class="included">
+      <li>Bureau meublé et équipé</li>
+      <li>Accès 24 h/24 sur vos jours</li>
+      <li>Salle de réunion (4 à 6 personnes)</li>
+      <li>Deux cuisines équipées</li>
+      <li>Café et thé en libre-service</li>
+      <li>Grande table de réunion, selon disponibilité</li>
+      <li>Espace extérieur partagé</li>
+      <li>Parking vélo</li>
+      <li>Internet ultra haut débit</li>
+      <li>Charges énergétiques</li>
+      <li>Nettoyage régulier des communs</li>
+      <li>Taxe foncière et assurance</li>
+      <li>Domiciliation de votre société</li>
+      <li>Vidéophonie personnalisée</li>
+    </ul>
+  </section>
 
-        <div class="contact-grid">
-          <div class="contact-left">
+  <!-- ============ CONDITIONS ============ -->
+  <section id="conditions" class="reveal">
+    <h2 class="label">Conditions</h2>
+    <div class="conds">
+      <div class="cond">
+        <span class="k">Contrat</span>
+        <span class="v">12 mois</span>
+        <span class="n">Contrat d'affiliation annuel</span>
+      </div>
+      <div class="cond">
+        <span class="k">Préavis</span>
+        <span class="v">3 mois</span>
+        <span class="n">À tout moment, par écrit</span>
+      </div>
+      <div class="cond">
+        <span class="k">Garantie</span>
+        <span class="v">1 mois</span>
+        <span class="n">Restituée en fin de contrat</span>
+      </div>
+    </div>
+  </section>
 
+  <!-- ============ CONTACT ============ -->
+  <footer id="contact" class="reveal" tabindex="-1">
+    <div class="roofline" aria-hidden="true">
+      <svg viewBox="0 0 840 26" preserveAspectRatio="none" fill="none"
+           stroke="#AB3722" stroke-width="1.4" vector-effect="non-scaling-stroke">
+        <path d="M0 26 L52.5 1 L105 26 L157.5 1 L210 26 L262.5 1 L315 26 L367.5 1 L420 26 L472.5 1 L525 26 L577.5 1 L630 26 L682.5 1 L735 26 L787.5 1 L840 26" />
+      </svg>
+    </div>
 
-<div class="map">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3065.207530549092!2d4.511544077083209!3d50.72297567164547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3d718a6c8010b%3A0xbf91a53887f9d6!2sRue%20de%20Rixensart%2014%2C%201332%20Rixensart!5e1!3m2!1sit!2sbe!4v1770727272457!5m2!1sit!2sbe" 
-width="450" 
-height="600" 
-style="border:0;" 
-allowfullscreen="" 
-loading="lazy" 
-referrerpolicy="no-referrer-when-downgrade">
-</iframe>
-</div>
-          </div>
-
-          <div class="contact-right">
-<div class="qa">
-  <h3 class="qa__q">Email</h3>
-  <p class="qa__a">matthieudamiens@gmail.com</p>
-</div>
-<div class="qa">
-  <h3 class="qa__q">Matthieu Damiens</h3>
-  <p class="qa__a">0475 442 849</p>
-</div>
-<div class="qa">
-  <h3 class="qa__q">Manuella Damiens</h3>
-  <p class="qa__a">0473 740 573</p>
-</div>
-          </div>
+    <div class="contact">
+      <div><span class="num">14</span></div>
+      <div>
+        <span class="k">The Post Office</span>
+        <div class="addr">Rue de Rixensart<br>1332 Genval</div>
+      </div>
+      <div>
+        <span class="k">Une visite&nbsp;?</span>
+        <div class="who">
+          Manuella Damiens — <a href="tel:+32473740573" aria-label="Appeler Manuella Damiens au 0473 74 05 73">0473 74 05 73</a><br>
+          Matthieu Damiens — <a href="tel:+32475442849" aria-label="Appeler Matthieu Damiens au 0475 44 28 49">0475 44 28 49</a><br>
+          <a href="mailto:Manuella.damiens@gmail.com">Manuella.damiens@gmail.com</a>
         </div>
       </div>
-    </section>
-
-
-
-  </main>
-
-  <footer class="footer">
-    <div class="wrap footer__inner">
-            <figure class="logo-footer">
-        <img src="img-logo2.png" alt="Segnaposto immagine grande">
-      </figure>
-      <p>Copyright The post office<br>
-
-      </p>
-      <a href="#top">Retour en haut</a>
     </div>
+
+    <p class="web">www.the-post-office.be</p>
+
+    <p class="fineprint">
+      Tous les montants s'entendent hors TVA et par mois. Grille valable à partir du 1<sup>er</sup> septembre 2026, sous réserve de disponibilité. The Post Office est une activité de BE MAD SRL, 14 rue de Rixensart, 1332 Genval — BE 1023.301.696.
+    </p>
   </footer>
 
-  <script src="script.js"></script>
+</main>
+</div>
+
+<a class="cta-bar" href="#contact">Réserver une visite</a>
+
 </body>
 </html>

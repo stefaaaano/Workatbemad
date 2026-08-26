@@ -1,72 +1,74 @@
-// script.js (sostituisci tutto con questo)
+/* The Post Office Workspace — comportements légers, sans dépendance.
+   Le contenu reste entièrement lisible si ce fichier ne s'exécute pas. */
+(function () {
+  'use strict';
 
-(function(){
-  const slides = Array.from(document.querySelectorAll('.hero__slide'));
-  if (!slides.length) return;
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var supportsIO = 'IntersectionObserver' in window;
+  var contact = document.getElementById('contact');
+  var bar = document.querySelector('.cta-bar');
 
-  const prevNext = Array.from(document.querySelectorAll('.hero__btn'));
-  let i = slides.findIndex(s => s.classList.contains('is-active'));
-  if (i < 0) i = 0;
+  /* ---------- révélation des sections au défilement ---------- */
+  var cibles = [].slice.call(document.querySelectorAll('.reveal'));
 
-  const setActive = (nextIndex) => {
-    slides[i].classList.remove('is-active');
-    i = (nextIndex + slides.length) % slides.length;
-    slides[i].classList.add('is-active');
-  };
-
-  const step = (dir = 1) => setActive(i + dir);
-
-  // autoplay
-  const INTERVAL = 4500;
-  let t = setInterval(() => step(1), INTERVAL);
-
-  // manual controls
-  prevNext.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const dir = Number(btn.dataset.dir || 1);
-      step(dir);
-      clearInterval(t);
-      t = setInterval(() => step(1), INTERVAL);
-    });
-  });
-
-  // pause on hover (desktop)
-  const hero = document.querySelector('.hero');
-  if (hero){
-    hero.addEventListener('mouseenter', () => clearInterval(t));
-    hero.addEventListener('mouseleave', () => {
-      clearInterval(t);
-      t = setInterval(() => step(1), INTERVAL);
-    });
+  function tout_montrer() {
+    cibles.forEach(function (el) { el.classList.add('is-visible'); });
   }
 
-  // respect reduced motion
-  const rm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (rm){
-    clearInterval(t);
+  if (reduce || !supportsIO) {
+    tout_montrer();
+  } else {
+    var vue = new IntersectionObserver(function (entrees, obs) {
+      entrees.forEach(function (e) {
+        // une section plus haute que l'écran n'atteint jamais 15 % : on se rabat
+        // alors sur la hauteur réellement visible.
+        var assez = e.intersectionRatio >= 0.15 ||
+                    e.intersectionRect.height >= window.innerHeight * 0.35;
+        if (e.isIntersecting && assez) {
+          e.target.classList.add('is-visible');
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: [0, 0.05, 0.15] });
+
+    cibles.forEach(function (el) { vue.observe(el); });
+
+    // filet de sécurité : ce qui est déjà à l'écran au chargement
+    window.setTimeout(function () {
+      cibles.forEach(function (el) {
+        var r = el.getBoundingClientRect();
+        if (r.top < window.innerHeight && r.bottom > 0) { el.classList.add('is-visible'); }
+      });
+    }, 1200);
   }
-})();
-(function(){
-  const track = document.querySelector('[data-strip-track]');
-  const prev = document.querySelector('[data-strip-prev]');
-  const next = document.querySelector('[data-strip-next]');
-  if (!track || !prev || !next) return;
 
-  const step = () => {
-    // larghezza di una “card” = primo elemento visibile
-    const item = track.querySelector('.strip__item');
-    if (!item) return 0;
-    const styles = getComputedStyle(item);
-    const w = item.getBoundingClientRect().width;
-    const borderR = parseFloat(styles.borderRightWidth) || 0;
-    return w + borderR;
-  };
+  /* ---------- barre de contact ---------- */
+  if (bar && contact) {
+    // elle s'efface dès que le bloc de contact est à l'écran : elle n'y sert plus.
+    if (supportsIO) {
+      new IntersectionObserver(function (entrees) {
+        entrees.forEach(function (e) {
+          bar.classList.toggle('is-hidden', e.isIntersecting);
+        });
+      }, { threshold: 0, rootMargin: '0px 0px -25% 0px' }).observe(contact);
+    }
 
-  prev.addEventListener('click', () => {
-    track.scrollBy({ left: -step(), behavior: 'smooth' });
-  });
+    // à l'arrivée sur #contact, le focus clavier suit le regard.
+    var donner_le_focus = function () {
+      try { contact.focus({ preventScroll: true }); } catch (e) { contact.focus(); }
+    };
 
-  next.addEventListener('click', () => {
-    track.scrollBy({ left: step(), behavior: 'smooth' });
-  });
+    bar.addEventListener('click', function () {
+      if (reduce) { window.setTimeout(donner_le_focus, 0); return; }
+      if ('onscrollend' in window) {
+        window.addEventListener('scrollend', donner_le_focus, { once: true });
+      } else {
+        window.setTimeout(donner_le_focus, 700);
+      }
+    });
+
+    window.addEventListener('hashchange', function () {
+      if (location.hash === '#contact') { donner_le_focus(); }
+    });
+  }
 })();
