@@ -1,0 +1,5 @@
+# Redirige tous les alias vers le domaine principal
+https://the-post-office.be/* https://post-office.be/:splat 301!
+https://www.the-post-office.be/* https://post-office.be/:splat 301!
+https://be-mad.be/* https://post-office.be/:splat 301!
+https://www.be-mad.be/* https://post-office.be/:splat 301!
