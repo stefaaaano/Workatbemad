@@ -364,6 +364,8 @@ a:hover { color: #8C2E1C; }
 @media (max-width: 560px) {
   .services-grid { grid-template-columns: 1fr; }
   .banner-cta, .custom-block { justify-content: center; text-align: center; }
+  .banner-buttons { flex-direction: column; width: 100%; align-items: stretch; }
+  .banner-button { width: 100%; text-align: center; padding: 16px 12px; box-sizing: border-box; }
   .gallery img { height: 260px; }
 
   /* Typographie agrandie sur mobile */
