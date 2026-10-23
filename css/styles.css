@@ -1,0 +1,387 @@
+/* THE POST OFFICE - styles */
+
+:root {
+  --ivoire: #F7F4EE;
+  --encre: #18211D;
+  --accent: #B03A24;
+  --accent-clair: #E8A48F;
+  --gris: #4F4F47;
+  --gris-fonce: #33332C;
+  --gris-clair-fonce: #C9C4B6;
+  --filet: #D8D2C4;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  background: var(--ivoire);
+  color: var(--encre);
+}
+
+a { color: var(--accent); }
+a:hover { color: #8C2E1C; }
+
+.page {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Bandeau */
+.topbar {
+  margin: 48px 5% 36px 5%;
+  border-bottom: 3px solid var(--encre);
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+.topbar-label {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gris);
+}
+
+/* Carrousel */
+.carousel {
+  position: relative;
+  margin: 0 5%;
+  height: 480px;
+  overflow: hidden;
+}
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+.slide.is-active { opacity: 1; }
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(24, 33, 29, 0.55);
+  color: var(--ivoire);
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 2;
+}
+.carousel-arrow.prev { left: 16px; }
+.carousel-arrow.next { right: 16px; }
+.carousel-arrow:hover { background: rgba(24, 33, 29, 0.8); }
+.carousel-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 14px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  z-index: 2;
+}
+.carousel-dots button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background: rgba(247, 244, 238, 0.45);
+}
+.carousel-dots button.is-active { background: var(--ivoire); }
+
+/* Titre */
+.hero { margin: 36px 5% 0 5%; }
+.hero h1 {
+  margin: 0;
+  font-size: clamp(34px, 5vw, 58px);
+  font-weight: 900;
+  line-height: 1.05;
+}
+.hero-sub {
+  margin: 10px 0 0 0;
+  font-size: clamp(18px, 2.2vw, 26px);
+  font-weight: 300;
+}
+
+/* Intro */
+.intro { margin: 36px 5% 0 5%; max-width: 880px; }
+.intro p {
+  margin: 0 0 18px 0;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.65;
+}
+
+/* Galerie horizontale */
+.gallery-wrap { margin: 44px 0 0 5%; }
+.gallery {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 0 5% 12px 0;
+  -webkit-overflow-scrolling: touch;
+}
+.gallery figure {
+  margin: 0;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.gallery img {
+  height: 400px;
+  width: auto;
+  display: block;
+}
+.gallery figcaption {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gris);
+}
+
+/* Services */
+.services { margin: 52px 5% 0 5%; }
+.eyebrow {
+  margin: 0 0 24px 0;
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 48px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: var(--gris-fonce);
+}
+.services-grid div {
+  padding: 12px 0;
+  border-top: 1px solid var(--filet);
+}
+
+/* Sections formules */
+.section { margin: 60px 5% 0 5%; }
+.section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  border-bottom: 3px solid var(--encre);
+  padding-bottom: 14px;
+  margin-bottom: 28px;
+}
+.section-head h2 {
+  margin: 0;
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 900;
+}
+.section-price { margin: 0; font-size: 16px; color: var(--gris); }
+.section-price strong { font-weight: 900; color: var(--accent); }
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: #FFFFFF;
+  border: 1px solid var(--filet);
+  padding: 30px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.card h3 { margin: 0; font-size: 22px; font-weight: 900; }
+.card-price {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--accent);
+}
+.card-text {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--gris-fonce);
+}
+.card ul {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--gris);
+}
+.card-note {
+  margin: auto 0 0 0;
+  font-size: 12px;
+  font-style: italic;
+  color: var(--gris);
+}
+
+.card--dark {
+  background: var(--encre);
+  border-color: var(--encre);
+  color: var(--ivoire);
+}
+.card--dark .card-price { color: var(--accent-clair); }
+.card--dark .card-text,
+.card--dark ul,
+.card--dark .card-note { color: var(--gris-clair-fonce); }
+
+.section-photo {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.custom-block {
+  margin-top: 24px;
+  border: 1px solid var(--filet);
+  background: #FFFFFF;
+  padding: 24px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.custom-title { margin: 0; font-size: 20px; font-weight: 700; }
+.custom-text { margin: 0; font-size: 16px; font-weight: 300; }
+.custom-link {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.custom-link:hover { color: var(--accent); }
+
+.wide-photo {
+  margin-top: 24px;
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Bandeau essai gratuit */
+.banner-cta {
+  margin: 60px 5% 0 5%;
+  background: var(--accent);
+  color: var(--ivoire);
+  padding: 40px 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.banner-title {
+  margin: 0;
+  font-size: clamp(22px, 3vw, 30px);
+  font-weight: 900;
+}
+.banner-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+.banner-button {
+  flex-shrink: 0;
+  background: var(--ivoire);
+  color: var(--encre);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 16px 32px;
+  letter-spacing: 1px;
+}
+.banner-button:hover { color: var(--accent); }
+
+/* Pied de page */
+.footer {
+  margin-top: 60px;
+  padding: 40px 5% 48px 5%;
+  border-top: 3px solid var(--encre);
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.footer p { margin: 0 0 8px 0; }
+.footer-name {
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+.footer-brand { font-size: 15px; font-weight: 300; color: var(--gris-fonce); }
+.footer-phone a { font-weight: 700; color: var(--encre); text-decoration: none; }
+.footer-access {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--gris-fonce);
+  max-width: 560px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .services-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .grid-2 { grid-template-columns: 1fr; }
+  .section-photo { min-height: 240px; max-height: 360px; }
+  .carousel { height: 52vw; min-height: 240px; }
+  .gallery img { height: 300px; }
+}
+
+@media (max-width: 560px) {
+  .services-grid { grid-template-columns: 1fr; }
+  .banner-cta, .custom-block { justify-content: center; text-align: center; }
+  .gallery img { height: 260px; }
+
+  /* Typographie agrandie sur mobile */
+  .topbar-label { font-size: 15px; }
+  .intro p { font-size: 19px; }
+  .gallery figcaption { font-size: 15px; }
+  .eyebrow { font-size: 16px; }
+  .services-grid { font-size: 17px; line-height: 1.55; }
+  .section-price { font-size: 17px; }
+  .card h3 { font-size: 24px; }
+  .card-price { font-size: 17px; }
+  .card-text { font-size: 17px; }
+  .card ul { font-size: 15px; }
+  .card-note { font-size: 14px; }
+  .custom-title { font-size: 21px; }
+  .custom-text { font-size: 17px; }
+  .banner-button { font-size: 17px; }
+  .footer-brand { font-size: 17px; }
+  .footer-phone a { font-size: 18px; }
+  .footer-access { font-size: 16px; }
+}
