@@ -47,3 +47,16 @@
   dots[0].classList.add('is-active');
   restart();
 })();
+
+// Suivi des contacts dans Google Analytics : clics sur le téléphone et l'e-mail
+(function () {
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest('a[href^="tel:"], a[href^="mailto:"]');
+    if (!link || typeof gtag !== 'function') return;
+    var type = link.getAttribute('href').indexOf('tel:') === 0 ? 'telephone' : 'email';
+    gtag('event', 'contact', {
+      methode: type,
+      emplacement: link.closest('footer') ? 'pied_de_page' : 'bandeau'
+    });
+  });
+})();

@@ -30,7 +30,7 @@
   <meta property="og:title" content="The Post Office - Bureaux &amp; coworking à Genval">
   <meta property="og:description" content="Bureaux privatifs et coworking aux Papeteries de Genval. Un bureau au milieu de la vie : à deux pas de la gare, du lac, des commerces et des salles de sport.">
   <meta property="og:url" content="https://post-office.be/">
-  <meta property="og:image" content="https://post-office.be/images/facade.jpg">
+  <meta property="og:image" content="https://post-office.be/images/og.jpg">
   <meta name="twitter:card" content="summary_large_image">
 
   <!-- Donnees structurees pour Google et les IA -->
@@ -44,14 +44,68 @@
     "url": "https://post-office.be/",
     "telephone": "+32473740573",
     "email": "manuella.damiens@gmail.com",
-    "image": "https://post-office.be/images/facade.jpg",
+    "image": "https://post-office.be/images/og.jpg",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "14 rue de Rixensart",
       "postalCode": "1332",
       "addressLocality": "Genval",
+      "addressRegion": "Brabant wallon",
       "addressCountry": "BE"
-    }
+    },
+    "priceRange": "€€",
+    "currenciesAccepted": "EUR",
+    "areaServed": [
+      { "@type": "City", "name": "Genval" },
+      { "@type": "City", "name": "Rixensart" },
+      { "@type": "City", "name": "La Hulpe" },
+      { "@type": "City", "name": "Waterloo" },
+      { "@type": "AdministrativeArea", "name": "Brabant wallon" }
+    ],
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "00:00",
+      "closes": "23:59"
+    }],
+    "amenityFeature": [
+      { "@type": "LocationFeatureSpecification", "name": "Connexion internet ultra haut débit", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Salle de réunion", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Cuisine, café et thé", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Imprimante", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Parking gratuit à proximité", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Nettoyage hebdomadaire", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Accès 24h/24 et 7j/7", "value": true }
+    ],
+    "makesOffer": [
+      {
+        "@type": "Offer",
+        "name": "L'Adresse - bureau privatif",
+        "description": "Bureau privatif meublé et équipé pour vous et votre équipe, accessible 24h/24 et 7j/7.",
+        "price": "500",
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "500",
+          "priceCurrency": "EUR",
+          "unitText": "par mois, hors TVA",
+          "minPrice": "500"
+        }
+      },
+      {
+        "@type": "Offer",
+        "name": "La solution flexible - coworking",
+        "description": "Poste fixe dédié dans un bureau partagé de trois personnes maximum, accessible 24h/24 et 7j/7.",
+        "price": "250",
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "250",
+          "priceCurrency": "EUR",
+          "unitText": "par mois, hors TVA"
+        }
+      }
+    ]
   }
   </script>
 </head>
@@ -66,13 +120,13 @@
   <!-- Carrousel -->
   <section class="carousel" id="carousel" aria-label="Photos de The Post Office">
     <div class="slide is-active">
-      <img src="images/facade.jpg" alt="La façade en briques de The Post Office à la tombée du jour">
+      <img src="images/facade.webp" alt="La façade en briques de The Post Office à la tombée du jour" width="1448" height="1086" fetchpriority="high">
     </div>
     <div class="slide">
-      <img src="images/grande-table.jpg" alt="La grande table commune de l'open space">
+      <img src="images/grande-table.webp" alt="La grande table commune de l'open space" width="1448" height="1086" loading="lazy" decoding="async">
     </div>
     <div class="slide">
-      <img src="images/salle-reunion.jpg" alt="La salle de réunion">
+      <img src="images/salle-reunion.webp" alt="La salle de réunion" width="1448" height="1086" loading="lazy" decoding="async">
     </div>
     <button class="carousel-arrow prev" aria-label="Photo précédente">&#8249;</button>
     <button class="carousel-arrow next" aria-label="Photo suivante">&#8250;</button>
@@ -96,27 +150,27 @@
   <section class="gallery-wrap" aria-label="Galerie des espaces">
     <div class="gallery">
       <figure>
-        <img src="images/bureau-klee.jpg" alt="Le bureau Klee">
+        <img src="images/bureau-klee.webp" alt="Le bureau Klee" width="900" height="675" loading="lazy" decoding="async">
         <figcaption>Bureau Klee</figcaption>
       </figure>
       <figure>
-        <img src="images/bureau-kusama.jpg" alt="Le bureau Kusama">
+        <img src="images/bureau-kusama.webp" alt="Le bureau Kusama" width="900" height="675" loading="lazy" decoding="async">
         <figcaption>Bureau Kusama</figcaption>
       </figure>
       <figure>
-        <img src="images/bureau-miro.jpg" alt="Le bureau Miro">
+        <img src="images/bureau-miro.webp" alt="Le bureau Miro" width="900" height="675" loading="lazy" decoding="async">
         <figcaption>Bureau Miro</figcaption>
       </figure>
       <figure>
-        <img src="images/bureau-rothko.jpg" alt="Le bureau Rothko">
+        <img src="images/bureau-rothko.webp" alt="Le bureau Rothko" width="900" height="505" loading="lazy" decoding="async">
         <figcaption>Bureau Rothko</figcaption>
       </figure>
       <figure>
-        <img src="images/cuisine.jpg" alt="La kitchenette, bois et inox">
+        <img src="images/cuisine.webp" alt="La kitchenette, bois et inox" width="900" height="1200" loading="lazy" decoding="async">
         <figcaption>La cuisine</figcaption>
       </figure>
       <figure>
-        <img src="images/coin-detente.jpg" alt="Le coin détente et sa table ronde">
+        <img src="images/coin-detente.webp" alt="Le coin détente et sa table ronde" width="900" height="1200" loading="lazy" decoding="async">
         <figcaption>Le coin détente</figcaption>
       </figure>
     </div>
@@ -168,7 +222,7 @@
         </ul>
         <p class="card-note">*Prix HTVA, toutes charges comprises.</p>
       </article>
-      <img class="section-photo" src="images/bureau-duo.jpg" alt="Un bureau privatif lumineux pour deux personnes">
+      <img class="section-photo" src="images/bureau-duo.webp" alt="Un bureau privatif lumineux pour deux personnes" width="1086" height="1448" loading="lazy" decoding="async">
     </div>
   </section>
 
@@ -194,7 +248,7 @@
         </ul>
         <p class="card-note">*Prix HTVA, toutes charges comprises.</p>
       </article>
-      <img class="section-photo" src="images/open-space.jpg" alt="L'open space et sa grande table noire">
+      <img class="section-photo" src="images/open-space.webp" alt="L'open space et sa grande table noire" width="1600" height="900" loading="lazy" decoding="async">
     </div>
     <div class="custom-block">
       <p class="custom-title">Besoin d'un arrangement personnalisé ?</p>
