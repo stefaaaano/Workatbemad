@@ -60,3 +60,28 @@
     });
   });
 })();
+
+// Bouton de contact flottant : apparait apres le premier ecran, disparait sur le pied de page
+(function () {
+  var btn = document.querySelector('.floating-contact');
+  var footer = document.getElementById('contact');
+  if (!btn || !footer) return;
+
+  var footerVisible = false;
+
+  function update() {
+    var passeLePremierEcran = window.scrollY > window.innerHeight * 0.6;
+    btn.classList.toggle('is-visible', passeLePremierEcran && !footerVisible);
+  }
+
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (entries) {
+      footerVisible = entries[0].isIntersecting;
+      update();
+    }, { rootMargin: '0px 0px -40% 0px' }).observe(footer);
+  }
+
+  window.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update);
+  update();
+})();
